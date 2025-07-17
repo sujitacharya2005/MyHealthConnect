@@ -1,0 +1,50 @@
+# Android Studio/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Build output
+/build/
+app/build/
+*/build/
+
+# Gradle
+.gradle/
+local.properties
+
+# Signing keys and sensitive files
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Test reports and coverage
+test-output/
+test-results/
+coverage/
+*.ec
+
+# Captures and screenshots
+captures/
+screenshots/
+
+# Misc
+*.swp
+*.swo
+*.orig
+*.rej
+
+# VSCode settings (if you use VSCode)
+.vscode/
+
+# Node modules (if you ever add JS tooling)
+node_modules/
