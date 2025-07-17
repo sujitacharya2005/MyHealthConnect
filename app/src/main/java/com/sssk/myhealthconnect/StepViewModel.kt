@@ -19,7 +19,13 @@ class StepViewModel(private val repository: StepRepository) : ViewModel() {
     val lastStepCount = mutableStateOf<Long?>(null)
 
     val stepPermissions = setOf(
+        HealthPermission.getWritePermission(ExerciseSessionRecord::class),
+        HealthPermission.getReadPermission(ExerciseSessionRecord::class),
         HealthPermission.getWritePermission(StepsRecord::class),
+        HealthPermission.getWritePermission(SpeedRecord::class),
+        HealthPermission.getWritePermission(DistanceRecord::class),
+        HealthPermission.getWritePermission(TotalCaloriesBurnedRecord::class),
+        HealthPermission.getWritePermission(HeartRateRecord::class)
     )
 
     fun checkPermissions(healthConnectManager: HealthConnectManager) {
